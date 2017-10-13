@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-#form-container {
+.flex-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -12,12 +12,18 @@ body {
   min-height: 7em;
 }
 
+#mess-form {
+  width: 100%;
+}
+
 .fokus-input {
   box-shadow: none;
+  text-align: center;
   flex-grow: 1;
   font-size: 1em;
   border: none;
   caret-color: red;
+  width: 100%;
 }
 
 .fokus-input:focus {
@@ -25,8 +31,10 @@ body {
 }
 
 .main-words {
+  display: inline;
   color: white;
-  width: 100%;
+  font-size: 1em;
+  align-self: center;
 }
 
 .showing {
