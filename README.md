@@ -23,4 +23,4 @@ was completed between 11 PM and 1 AM, so don't be too hard on me :)
 
 ## TODO
 
-[ ] Add color picker, theming, etc
+- [ ] Add color picker, theming, etc
