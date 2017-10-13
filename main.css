@@ -30,13 +30,44 @@ body {
   outline: none;
 }
 
-.main-words {
-  display: inline;
-  color: white;
-  font-size: 1em;
-  align-self: center;
+@keyframes body-color {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: black;
+  }
 }
 
-.showing {
+
+@keyframes words {
+  from {
+    color: black;
+    font-weight: normal;
+  }
+
+  to {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.anim-words {
+  font-size: 1em;
+  animation-name: words;
+  color: white;
+  font-weight: bold;
+  animation-duration: 500ms;
+}
+
+.anim-body {
   background-color: black;
+  animation-name: body-color;
+  animation-duration: 500ms;
+}
+
+.plain-words {
+  font-size: 1em;
+  font-weight: normal;
 }

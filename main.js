@@ -5,11 +5,13 @@ $(document).ready(function() {
     $message = $("#message");
     const raw = $message.val();
     const escaped = $("<div />").text(raw).html();
-    const to_add = '<h1 class="main-words">' + escaped + '</h1>';
 
+    const $plain = $('<h1 class="plain-words">' + escaped + '</h1>');
     $message.val('');
-    $('#words-container').html(to_add);
-    $('body').addClass('showing');
     $('#form-container').hide();
+    $('#words-container').html($plain);
+    $plain.removeClass('plain-words');
+    $plain.addClass('anim-words');
+    $('body').addClass('anim-body');
   });
 });
