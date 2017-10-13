@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $form = $("#mess-form");
-  $form.submit(function (event) {
+  $form.submit(function(event) {
     event.preventDefault();
     $message = $("#message");
     const raw = $message.val();

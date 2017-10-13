@@ -1,9 +1,23 @@
-.fokus-input {
+body {
   font-size: 5em;
   font-family: Helvetica, sans-serif;
-  width: 100%;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 7em;
+}
+
+.fokus-input {
   box-shadow: none;
+  flex-grow: 1;
+  font-size: 1em;
   border: none;
+  caret-color: red;
 }
 
 .fokus-input:focus {
@@ -11,8 +25,6 @@
 }
 
 .main-words {
-  font-size: 10em;
-  font-family: Helvetica, sans-serif;
   color: white;
   width: 100%;
 }
