@@ -1,7 +1,20 @@
+.fokus-input {
+  font-size: 5em;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+}
+
+.fokus-input:focus {
+  outline: none;
+}
+
 .main-words {
   font-size: 10em;
-  font-family: Helvetica, sans;
+  font-family: Helvetica, sans-serif;
   color: white;
+  width: 100%;
 }
 
 .showing {
